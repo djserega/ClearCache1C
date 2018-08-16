@@ -153,12 +153,15 @@ namespace ClearCache1C
         {
             List<string> list = new List<string>();
 
-            foreach (DirectoryInfo dir in new DirectoryInfo(path).GetDirectories())
+            if (new DirectoryInfo(path).Exists)
             {
-                string nameDir = dir.Name;
+                foreach (DirectoryInfo dir in new DirectoryInfo(path).GetDirectories())
+                {
+                    string nameDir = dir.Name;
 
-                if (IsDirectoryCache(nameDir))
-                    list.Add(nameDir);
+                    if (IsDirectoryCache(nameDir))
+                        list.Add(nameDir);
+                }
             }
 
             return list;
@@ -201,17 +204,18 @@ namespace ClearCache1C
 
         private static void DeleteDir(string path)
         {
-            if (!string.IsNullOrWhiteSpace(path))
-            {
-                DeleteSubDir(path);
-                try
+            if (new DirectoryInfo(path).Exists)
+                if (!string.IsNullOrWhiteSpace(path))
                 {
-                    Directory.Delete(path);
+                    DeleteSubDir(path);
+                    try
+                    {
+                        Directory.Delete(path);
+                    }
+                    catch (Exception)
+                    {
+                    }
                 }
-                catch (Exception)
-                {
-                }
-            }
         }
 
         private static void DeleteSubDir(string path)
