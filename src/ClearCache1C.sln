@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearCache1C", "ClearCache1C\ClearCache1C.csproj", "{8EFD11F9-49E7-4309-8FA8-18E8527F5EEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EFD11F9-49E7-4309-8FA8-18E8527F5EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EFD11F9-49E7-4309-8FA8-18E8527F5EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EFD11F9-49E7-4309-8FA8-18E8527F5EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EFD11F9-49E7-4309-8FA8-18E8527F5EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AA1B0E1-38A6-4404-AF0A-BC619FF53536}
+	EndGlobalSection
+EndGlobal
