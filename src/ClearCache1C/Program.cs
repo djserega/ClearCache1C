@@ -28,11 +28,11 @@ namespace ClearCache1C
             if (!string.IsNullOrEmpty(args.FirstOrDefault(f => f == "/?")))
             {
                 Console.WriteLine("Доступные команды:");
-                Console.WriteLine("     /all - полная очиска каталогов");
+                Console.WriteLine("     /all - полная очистка каталогов");
                 Console.WriteLine("     /local - очистка каталога AppData\\Local");
                 Console.WriteLine("     /roaming - очистка каталога AppData\\Roaming");
                 Console.WriteLine("");
-                Console.WriteLine("Для очистки всех кешей нужно воспользоваться командами: /all /local или /all /roaming");
+                Console.WriteLine("Для очистки всего кеша нужно воспользоваться командами: /all /local или /all /roaming");
                 Console.WriteLine("");
                 Console.WriteLine("Для очистки конкретной базы или нескольких баз необходимо передать /local или /roaming с именами каталогов баз через пробел:");
                 Console.WriteLine("     /local ИмяКаталога");
